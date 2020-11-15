@@ -1,22 +1,53 @@
-<form action="https://activity.books.com.tw/books66_cat/1" method="GET">
-<input type="text" name="category">
-<input type="submit" value="快速搜尋">
-</form>
+<!DOCTYPE html>
+<html lang="tw">
+      <head>
+	<meta charset="UTF-8">
+	<title>連怡婷的旅行遊記</title>
+	<meta name="description" content="文化觀光/旅遊介紹/攝影/戲劇">
+	      <link rel="stylesheet" href="style.css">
+      </head>
 
-<br>
-<form action="https://activity.books.com.tw/books66_cat/1" method="GET">
-<select name="category">
-<option value="a">商業理財</option>
-<option value="b">文學小說</option>
-<option value="c" selected>藝術設計</option>
-<option value="d">人文科普</option>
-<option value="e">語言．電腦</option>
+<style>
+h1 { font-family:"微軟正黑體"; }
+h2 { font-family:"微軟正黑體"; }
+p { font-family:"微軟正黑體"; }
+</style>
+
+<body>
+<header>
+<h1>臺灣觀光相關網頁</h1>
+</header>
+
+<h2>旅遊資訊搜尋</h2>
+<form action="https://www.taiwan.net.tw/m1.aspx?" method="GET">
+<select name="sNo">
+<option value="0001001"selected>旅遊情報</option>
+<option value="0000082">景點</option>
+<option value="0000104">節慶活動</option>
+<option value="0000106">美食</option>
+<option value="0000107">購物</option>
+<option value="0000047">旅遊指南</option>
+<option value="0000108">主題推薦</option>
 </select>
-<input type="submit" value="快速搜尋">
+<input type="submit" value="搜尋">
 </form>
 
-<form action="https://search.books.com.tw/search/query/" method="GET">
+<h2>旅遊交通-臺灣好行</h2>
+<form action="https://www.taiwantrip.com.tw/search" method="GET">
 <input type="text" name="key">
-<input type="hidden" name="cat" value="DAP">
-<input type="submit" value="搜尋博客來">
+<input type="hidden" name="q" value="好行路線">
+<input type="submit" value="搜尋">
 </form>
+
+<h2>旅遊住宿</h2>
+<form action="https://www.taiwanstay.net.tw/legal-hotel-list" method="GET">
+<input type="text" name="key">
+<input type="hidden" name="s" value="t">
+<input type="submit" value="搜尋">
+</form>
+
+<h2>旅遊日期查詢</h2>
+<input type="date" name="date">
+
+</body>
+</html>
